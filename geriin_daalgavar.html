@@ -1,0 +1,104 @@
+<html>
+
+<head>
+
+    <html>
+
+    <head>
+        <style>
+            body {
+                background-color: #eef2f7;
+            }
+
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+<body>
+    <h1>Оюутаны хоолны газрын санал асуулга</h1>
+    <form action="#" method="post">
+        <p>
+            <label>Нэр</label>
+            <input type="text" id="name"="name" required>
+        </p>
+        <p>
+            <label>Имэйл</label>
+            <input type="email" id="email"="email" placeholder="ner@xample.com">
+        </p>
+        <p>
+            <label>Нас</label>
+            <input type="number" id="age"="age" min="18" max="60">
+        </p>
+
+        <fieldset>
+            <legend>Хэр олон удаа хооллодог вэ?</legend>
+            <p>
+                <input type="radio" id="f-daily" name="frequency" value="daily">
+                <label for="f-daily">Өдөр бүр</label>
+            </p>
+            <p>
+                <input type="radio" id="f-often" name="frequency" value="often">
+                <label for="f-often">7 хоногт 3-4 удаа</label>
+            </p>
+            <P>
+                <input type="radio" id="f-rare" name="frequency" value="rare">
+                <label for="f-rare">7 хоногт 1-2 удаа</label>
+            </P>
+            <p>
+                <input type="radio" id="f-never" name="frequency" value="never">
+                <label for="f-never">Бараг хооллодоггүй.</label>
+            </p>
+
+            <fieldset>
+
+                <legend>Ямар хоолонд дуртай вэ?</legend>
+                <p>
+                    <input type="checkbox" id="food-buuz" name="food" value="buuz">
+                    <label for="Buuz">Бууз</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food-tsuiwan" name="food" value="tsuiwan">
+                    <label for="tsuiwan">Цуйван</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food-salat" name="food" value="salat">
+                    <label for="salat">Салат</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="food-soup" name="soup" value="soup">
+                    <label for="soup">Шөл</label>
+                </p>
+                <p>
+                    <label for="course">Курс</label>
+                    <select id="course" name="course">
+                        <option value="1">1-р курс</option>
+                        <option value="2">2-р курс</option>
+                        <option value="3">3-р курс</option>
+                        <option value="4">4-р курс</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comment">Сэтгэгдэл</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="40"></textarea>
+                </p>
+                <p>
+                    <label for="visit">Сүүлд очсон огноо</label>
+                    <input type="date" id="visit" name="visit">
+                </p>
+                <p>
+                    <label for="rating">Сэтгэл ханамж (1–10)</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+                </p>
+
+                <button type="submit">Илгээх</button>
+                <button type="reset">Цэвэрлэх</button>
+    </form>
+
+</body>
+</head>
+
+</html>
