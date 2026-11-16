@@ -1,0 +1,85 @@
+
+/* Сайтын үндсэн загвар */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Толгой хэсэг - FLEX */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 30px;
+}
+
+/* Хувийн зураг */
+header img {
+    width: 130px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+/* Цэс - FLEX */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #294d73;
+    padding: 20px;
+}
+
+/* Цэсний холбоос */
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Цэс дээр хулгана очих үед */
+nav a:hover {
+    color: rgb(204, 11, 11);
+}
+
+/* Мэдээллийн хэсэг - GRID */
+.container {
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Мэдээллийн хайрцаг */
+section {
+    background-color: rgba(141, 119, 119, 0.397);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Гарчгийн өнгө */
+h2 {
+    color: #1e3a5f;
+}
+
+/* Холбоо барих хэсэг */
+#contact {
+    grid-column: 1 / 3;
+}
+
+/* Доод хэсэг */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
