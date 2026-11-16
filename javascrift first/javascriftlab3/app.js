@@ -2,11 +2,11 @@
 let tasks = [
 
     {
-        id: 1, text1: "lekts unshih",
+        id: 1, text: "lekts unshih",
         done: true
     },
     {
-        id: 2, text1: "App bichih",
+        id: 2, text: "App bichih",
         done: false
     },
 ];
@@ -17,8 +17,8 @@ function render() {
     tasks.forEach((task) => {
         const li = document.createElement('li');
         li.textContent = task.text;
-        if (task.done) li.classlist.add("done");
-        li.addEventListener("click", () => toggleTaks(task.id));
+        if (task.done) li.classList.add("done");
+        li.addEventListener("click", () => toggleTask(task.id));
         const del = document.createElement("button");
         del.textContent = "ustgah";
         del.addEventListener("click", (e) => {
